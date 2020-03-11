@@ -1,2 +1,2 @@
 # chalice_aws
-Getting started with chalice and aws serverless compution
+Getting started with chalice and aws serverless computation
