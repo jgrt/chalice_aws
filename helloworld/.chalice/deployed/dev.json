@@ -1,0 +1,39 @@
+{
+  "resources": [
+    {
+      "name": "save_data_role",
+      "resource_type": "iam_role",
+      "role_arn": "arn:aws:iam::921277091092:role/helloworld-dev-save_data",
+      "role_name": "helloworld-dev-save_data"
+    },
+    {
+      "name": "save_data",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-south-1:921277091092:function:helloworld-dev-save_data"
+    },
+    {
+      "name": "save_data-event",
+      "resource_type": "cloudwatch_event",
+      "rule_name": "helloworld-dev-save_data-event"
+    },
+    {
+      "name": "api_handler_role",
+      "resource_type": "iam_role",
+      "role_arn": "arn:aws:iam::921277091092:role/helloworld-dev-api_handler",
+      "role_name": "helloworld-dev-api_handler"
+    },
+    {
+      "name": "api_handler",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-south-1:921277091092:function:helloworld-dev"
+    },
+    {
+      "name": "rest_api",
+      "resource_type": "rest_api",
+      "rest_api_id": "zdhh38mot2",
+      "rest_api_url": "https://zdhh38mot2.execute-api.ap-south-1.amazonaws.com/api/"
+    }
+  ],
+  "schema_version": "2.0",
+  "backend": "api"
+}
